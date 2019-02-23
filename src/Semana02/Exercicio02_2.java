@@ -5,15 +5,18 @@ import java.util.Scanner;
 public class Exercicio02_2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite a primeira palavra: ");
+        /*System.out.println("Digite a primeira palavra: ");
         String p1 = sc.next();
         
         System.out.println("Digite a segunda palavra: ");
         String p2 = sc.next();
-        System.out.println(getSimilaridade(p1, p2));
+        System.out.println(getDistancia(p1, p2));*/
+        
+        
+        
     }
     
-    private static double getSimilaridade(String strPalavra1, String strPalavra2){
+    public static double getSimilaridade(String strPalavra1, String strPalavra2){
         String maior = strPalavra1;
         String menor = strPalavra2;
         
@@ -45,4 +48,10 @@ public class Exercicio02_2 {
     private static int getOcorrencias(char c, String s){
         return s.length() - s.replace(Character.toString(c), "").length();
     }
+    
+    public static double getDistancia(String strPalavra1, String strPalavra2){
+        return 1 - getSimilaridade(strPalavra1, strPalavra2);
+    }
+    
+    
 }
