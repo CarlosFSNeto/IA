@@ -50,5 +50,17 @@ public class Exercicio07 {
         System.out.println("Grupo: " + classe);
         desconhecido.setClassValue(classe);
         System.out.println("Rótulo: " + desconhecido.stringValue(9));
+        
+        /*
+        
+        	50-59	premeno	25-29	0-2	yes	1	right  left_low no	
+recorrente											
+	85	25	48	18	46	31	12	36	35	54	3,227018007040412E-05
+	286	85	85	85	85	85	85	85	85	85	
+											
+não recorrente											
+	201	71	102	36	167	25	59	98	75	164	0,00010159356664082831
+	286	201	201	201	201	201	201	201	201	201	
+        */
     }
 }
